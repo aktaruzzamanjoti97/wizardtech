@@ -13,7 +13,7 @@ https://wizardtech.vercel.app
 - **Testimonials** - Customer reviews and success stories
 - **Essential Tools** - Property management and analytics tools
 - **Responsive Design** - Mobile-first approach with Tailwind CSS
-- **Modern UI Components** - Built with Radix UI and shadcn/ui
+- **Modern UI Components** - Built with shadcn/ui
 
 ## 🚀 Tech Stack
 
@@ -21,7 +21,6 @@ https://wizardtech.vercel.app
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS 4
 - **UI Components:**
-  - Radix UI primitives
   - shadcn/ui components
   - Lucide icons
 - **Animations:** tw-animate-css
@@ -120,7 +119,6 @@ For detailed deployment instructions, check out the [Next.js deployment document
 - [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API
 - [Next.js Tutorial](https://nextjs.org/learn) - Interactive Next.js tutorial
 - [Tailwind CSS](https://tailwindcss.com/docs) - Utility-first CSS framework
-- [Radix UI](https://www.radix-ui.com/) - Unstyled, accessible components
 
 ## 📄 License
 
