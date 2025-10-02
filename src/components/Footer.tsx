@@ -125,7 +125,7 @@ function SocialLinks({ links }: { links: SocialLink[] }) {
 
 function BackgroundText() {
 	return (
-		<div className='absolute bottom-0 left-0 right-0 pointer-events-none select-none overflow-hidden'>
+		<div className='absolute bottom-6 left-0 right-0 pointer-events-none select-none overflow-hidden'>
 			<div className='text-[#3D2F44] font-bold leading-none tracking-tight'>
 				<span className='block text-center pb-2 sm:pb-3 md:pb-4 text-[80px] xs:text-[100px] sm:text-[120px] md:text-[180px] lg:text-[240px] xl:text-[280px] 2xl:text-[320px]'>
 					WiztecBD

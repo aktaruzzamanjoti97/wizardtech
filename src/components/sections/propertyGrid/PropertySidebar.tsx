@@ -73,7 +73,7 @@ const AMENITIES = ['Pet-friendly', 'Parking', 'Private Pool', 'Gym'];
 
 export default function PropertySidebar() {
 	return (
-		<div className='w-full md:w-85 space-y-6'>
+		<div className='w-full lg:w-85 space-y-6'>
 			{/* Rent Budget */}
 			<div className='bg-white rounded-lg border p-5'>
 				<div className='flex items-center justify-between mb-4'>

@@ -84,7 +84,7 @@ export default function CourseCard() {
 	return (
 		<div className='max-w-6xl mx-auto px-2 md:px-4'>
 			<div
-				className='rounded-2xl md:rounded-[3rem] overflow-hidden bg-center md:bg-left'
+				className='rounded-2xl md:rounded-[3rem] overflow-hidden bg-center lg:bg-left'
 				style={{
 					backgroundImage: "url('/images/heroBackground.png')",
 					backgroundRepeat: 'no-repeat',

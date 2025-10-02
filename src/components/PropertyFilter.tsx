@@ -43,7 +43,7 @@ export default function PropertyFilter() {
 			<div className='container mx-auto px-4 py-5'>
 				<div className='flex flex-col lg:flex-row items-stretch lg:items-center gap-4'>
 					{/* Left side - Property Preference and Reset Filter */}
-					<div className='flex flex-col sm:flex-row w-full md:w-84 items-stretch sm:items-center gap-2 sm:gap-3 border border-gray-300 rounded-md px-3 sm:px-4 py-2 justify-between'>
+					<div className='flex flex-col sm:flex-row w-full lg:w-84 items-stretch sm:items-center gap-2 sm:gap-3 border border-gray-300 rounded-md px-3 sm:px-4 py-2 justify-between'>
 						<button className='text-base font-medium text-black bg-white hover:bg-gray-50 transition-colors py-2 sm:py-0'>
 							Property Preference
 						</button>
