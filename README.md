@@ -2,6 +2,9 @@
 
 A modern property marketplace platform built with Next.js 15, featuring a beautiful UI with property listings, testimonials, educational resources, and essential tools for property management.
 
+## Live Link
+https://wizardtech.vercel.app
+
 ## ✨ Features
 
 - **Property Marketplace** - Browse and filter properties with an intuitive grid layout
