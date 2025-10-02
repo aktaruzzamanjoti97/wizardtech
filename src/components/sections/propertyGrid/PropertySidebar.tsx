@@ -1,14 +1,7 @@
+import { CheckboxItemProps, FilterSectionProps } from '@/types';
 import { Minus } from 'lucide-react';
 
-interface CheckboxItemProps {
-	label: string;
-	defaultChecked?: boolean;
-}
 
-interface FilterSectionProps {
-	title: string;
-	children: React.ReactNode;
-}
 
 const CheckboxItem = ({ label, defaultChecked }: CheckboxItemProps) => (
 	<label className='flex items-center gap-3 cursor-pointer'>

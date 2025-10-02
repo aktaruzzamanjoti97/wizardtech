@@ -6,18 +6,27 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { Button } from './ui/button';
 
+const MENU_ITEMS = [
+	{ id: 'buy', label: 'Buy' },
+	{ id: 'rent', label: 'Rent' },
+	{ id: 'sell', label: 'Sell' },
+	{ id: 'agents', label: 'Agents' },
+	{ id: 'blogs', label: 'Blogs' },
+	{ id: 'contact', label: 'Contact Us' },
+] as const;
+
 export default function Header() {
-	const [activeMenu, setActiveMenu] = useState('buy');
+	const [activeMenu, setActiveMenu] = useState<string>('buy');
 
 	return (
-		<header className=''>
+		<header>
 			<div className='container mx-auto px-4 py-4'>
 				<div className='flex items-center justify-between'>
 					{/* Logo */}
 					<Link href='/' className='flex items-center gap-2'>
 						<Image
 							src='/images/wiztechLogo.png'
-							alt=''
+							alt='WiztecBD Logo'
 							width={30}
 							height={30}
 						/>
@@ -28,65 +37,23 @@ export default function Header() {
 
 					{/* Navigation */}
 					<nav className='hidden md:flex items-center gap-8'>
-						<button
-							onClick={() => setActiveMenu('buy')}
-							className={`text-lg font-semibold transition-colors ${
-								activeMenu === 'buy'
-									? 'text-[#59344F]'
-									: 'text-gray-700 hover:text-gray-900'
-							}`}>
-							Buy
-						</button>
-						<button
-							onClick={() => setActiveMenu('rent')}
-							className={`text-lg font-semibold transition-colors ${
-								activeMenu === 'rent'
-									? 'text-[#59344F]'
-									: 'text-gray-700 hover:text-gray-900'
-							}`}>
-							Rent
-						</button>
-						<button
-							onClick={() => setActiveMenu('sell')}
-							className={`text-lg font-semibold transition-colors ${
-								activeMenu === 'sell'
-									? 'text-[#59344F]'
-									: 'text-gray-700 hover:text-gray-900'
-							}`}>
-							Sell
-						</button>
-						<button
-							onClick={() => setActiveMenu('agents')}
-							className={`text-lg font-semibold transition-colors ${
-								activeMenu === 'agents'
-									? 'text-[#59344F]'
-									: 'text-gray-700 hover:text-gray-900'
-							}`}>
-							Agents
-						</button>
-						<button
-							onClick={() => setActiveMenu('blogs')}
-							className={`text-lg font-semibold transition-colors ${
-								activeMenu === 'blog'
-									? 'text-[#59344F]'
-									: 'text-gray-700 hover:text-gray-900'
-							}`}>
-							Blogs
-						</button>
-						<button
-							onClick={() => setActiveMenu('contact')}
-							className={`text-lg font-semibold transition-colors ${
-								activeMenu === 'contact'
-									? 'text-[#59344F]'
-									: 'text-gray-700 hover:text-gray-900'
-							}`}>
-							Contact Us
-						</button>
+						{MENU_ITEMS.map((item) => (
+							<button
+								key={item.id}
+								onClick={() => setActiveMenu(item.id)}
+								className={`text-lg font-semibold transition-colors ${
+									activeMenu === item.id
+										? 'text-[#59344F]'
+										: 'text-gray-700 hover:text-gray-900'
+								}`}>
+								{item.label}
+							</button>
+						))}
 					</nav>
 
 					{/* Actions */}
 					<div className='flex items-center gap-4'>
-						<button className='flex items-center gap-2  text-[#434953] hover:text-gray-900 transition-colors text-base'>
+						<button className='flex items-center gap-2 text-[#434953] hover:text-gray-900 transition-colors text-base'>
 							<Heart className='w-4 h-4' />
 							<span className='hidden sm:inline'>Favourite</span>
 						</button>

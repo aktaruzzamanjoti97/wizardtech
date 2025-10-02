@@ -1,10 +1,6 @@
 'use client';
 
-interface StatCardProps {
-	label: string;
-	value: string;
-	description: string;
-}
+import { StatCardProps } from "@/types";
 
 const STATS_DATA: StatCardProps[] = [
 	{

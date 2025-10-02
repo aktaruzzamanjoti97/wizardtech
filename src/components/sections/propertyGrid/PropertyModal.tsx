@@ -1,23 +1,9 @@
 'use client';
 
+import { PropertyModalProps } from '@/types';
 import { X } from 'lucide-react';
 import Image from 'next/image';
 import { useState } from 'react';
-
-interface PropertyModalProps {
-	isOpen: boolean;
-	onClose: () => void;
-	property: {
-		images: string[];
-		bedrooms: string;
-		bathrooms: string;
-		area: string;
-		title: string;
-		price: string;
-		period: string;
-		location: string;
-	};
-}
 
 export default function PropertyModal({
 	isOpen,

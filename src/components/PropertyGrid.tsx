@@ -1,10 +1,10 @@
 'use client';
 
 import { useState } from 'react';
-import Pagination from './Pagination';
-import PropertyCard from './PropertyCard';
-import PropertyModal from './PropertyModal';
-import PropertySidebar from './PropertySidebar';
+import Pagination from './sections/propertyGrid/Pagination';
+import PropertyCard from './sections/propertyGrid/PropertyCard';
+import PropertyModal from './sections/propertyGrid/PropertyModal';
+import PropertySidebar from './sections/propertyGrid/PropertySidebar';
 
 export default function PropertyGrid() {
 	type Property = {

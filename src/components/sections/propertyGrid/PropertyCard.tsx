@@ -1,19 +1,7 @@
 'use client';
 
+import { PropertyCardProps } from '@/types';
 import Image from 'next/image';
-
-interface PropertyCardProps {
-	image: string;
-	images: string[];
-	bedrooms: string;
-	bathrooms: string;
-	area: string;
-	title: string;
-	price: string;
-	period: string;
-	location: string;
-	onClick: () => void;
-}
 
 export default function PropertyCard({
 	image,

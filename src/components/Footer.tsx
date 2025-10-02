@@ -1,3 +1,4 @@
+import { ContactLink, NavigationLink, SocialLink } from '@/types';
 import {
 	Chrome,
 	Facebook,
@@ -6,30 +7,6 @@ import {
 	Twitter,
 } from 'lucide-react';
 import Link from 'next/link';
-
-// Types
-interface NavigationLink {
-	label: string;
-	href: string;
-}
-
-interface ContactLink {
-	label: string;
-	href: string;
-	type: 'email' | 'phone';
-}
-
-interface SocialLink {
-	name: string;
-	href: string;
-	icon:
-		| 'facebook'
-		| 'twitter'
-		| 'instagram'
-		| 'whatsapp'
-		| 'threads'
-		| 'tiktok';
-}
 
 // Constants
 const ABOUT_LINKS: NavigationLink[] = [

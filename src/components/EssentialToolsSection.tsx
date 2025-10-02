@@ -1,13 +1,6 @@
 'use client';
 
-// Types
-interface Tool {
-	title: string;
-	icon: string;
-	description: string;
-	link: string;
-	bgColor: string;
-}
+import { Tool } from "@/types";
 
 // Constants
 const TOOLS: Tool[] = [

@@ -1,9 +1,7 @@
+import { SortOption } from '@/types';
 import { ChevronDown, RotateCcw } from 'lucide-react';
 
-interface SortOption {
-	label: string;
-	value: string;
-}
+
 
 const SORT_OPTIONS: SortOption[] = [
 	{ label: 'Low to High', value: 'low-to-high' },
