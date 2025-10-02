@@ -90,9 +90,11 @@ export default function Header() {
 							<Heart className='w-4 h-4' />
 							<span className='hidden sm:inline'>Favourite</span>
 						</button>
-						<Button className='bg-[#59344F] hover:bg-[#6B1F78]/90 text-white rounded-full px-6 w-[105px] h-[46px]'>
-							Login Now
-						</Button>
+						<Link href='/login'>
+							<Button className='bg-[#59344F] hover:bg-[#6B1F78]/90 text-white rounded-full px-6 w-[105px] h-[46px]'>
+								Login Now
+							</Button>
+						</Link>
 					</div>
 				</div>
 			</div>

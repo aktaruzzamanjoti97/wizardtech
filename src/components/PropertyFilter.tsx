@@ -1,6 +1,45 @@
 import { ChevronDown, RotateCcw } from 'lucide-react';
 
+interface SortOption {
+	label: string;
+	value: string;
+}
+
+const SORT_OPTIONS: SortOption[] = [
+	{ label: 'Low to High', value: 'low-to-high' },
+	{ label: 'High to Low', value: 'high-to-low' },
+	{ label: 'Newest', value: 'newest' },
+	{ label: 'Oldest', value: 'oldest' },
+];
+
+const PropertyCount = ({ count }: { count: number }) => (
+	<div className='flex items-center gap-2 text-sm'>
+		<span className='font-semibold text-black text-xl'>Property</span>
+		<span className='text-gray-500 text-base'>
+			--- Showing result- ({count})
+		</span>
+	</div>
+);
+
+const SortDropdown = () => (
+	<div className='flex items-start gap-1 flex-col bg-[#F4F6F8] px-4'>
+		<span className='text-sm text-gray-500'>Sort By</span>
+		<div className='relative'>
+			<select className='appearance-none text-base font-medium text-black bg-transparent border-none outline-none cursor-pointer pr-6 pl-1'>
+				{SORT_OPTIONS.map((option) => (
+					<option key={option.value} value={option.value}>
+						{option.label}
+					</option>
+				))}
+			</select>
+			<ChevronDown className='w-4 h-4 text-gray-900 absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none' />
+		</div>
+	</div>
+);
+
 export default function PropertyFilter() {
+	const resultCount = 12;
+
 	return (
 		<div className='bg-white'>
 			<div className='container mx-auto px-4 py-5'>
@@ -18,26 +57,8 @@ export default function PropertyFilter() {
 
 					{/* Right side - Property count and Sort */}
 					<div className='flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4 lg:gap-8 border border-gray-300 lg:flex-1 px-4 sm:px-6 py-3 rounded-md'>
-						<div className='flex items-center gap-2 text-sm'>
-							<span className='font-semibold text-black text-[20px]'>
-								Property
-							</span>
-							<span className='text-gray-500 text-[16px]'>
-								--- Showing result- (12)
-							</span>
-						</div>
-						<div className='flex items-start gap-1 flex-col bg-[#F4F6F8] px-4'>
-							<span className='text-sm text-gray-500'>Sort By</span>
-							<div className='relative'>
-								<select className='appearance-none text-[16px] font-medium text-black bg-transparent border-none outline-none cursor-pointer pr-6 pl-1'>
-									<option>Low to High</option>
-									<option>High to Low</option>
-									<option>Newest</option>
-									<option>Oldest</option>
-								</select>
-								<ChevronDown className='w-4 h-4 text-gray-900 absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none' />
-							</div>
-						</div>
+						<PropertyCount count={resultCount} />
+						<SortDropdown />
 					</div>
 				</div>
 			</div>
