@@ -36,7 +36,7 @@ export default function Header() {
 					</Link>
 
 					{/* Navigation */}
-					<nav className='hidden md:flex items-center gap-8'>
+					<nav className='hidden lg:flex items-center gap-8'>
 						{MENU_ITEMS.map((item) => (
 							<button
 								key={item.id}
