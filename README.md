@@ -2,7 +2,7 @@
 
 A modern property marketplace platform built with Next.js 15, featuring a beautiful UI with property listings, testimonials, educational resources, and essential tools for property management.
 
-![WizardTech Home](public/images/wiztech.gif)
+![WizardTech Home](public/images/wiztechHome.png)
 
 ## Live Link
 
