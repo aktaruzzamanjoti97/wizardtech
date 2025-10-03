@@ -2,53 +2,57 @@
 
 A modern property marketplace platform built with Next.js 15, featuring a beautiful UI with property listings, testimonials, educational resources, and essential tools for property management.
 
-![WizardTech Home](public/images/wiztechHome.png)
+![WizardTech Home](public/images/wiztech.gif)
 
 ## Live Link
+
 https://wizardtech.vercel.app
 
 ## ✨ Features
 
-- **Property Marketplace** - Browse and filter properties with an intuitive grid layout
-- **Property Details** - Detailed property views with modal and sidebar components
-- **Revenue Section** - Educational courses and trusted partner showcase
-- **Testimonials** - Customer reviews and success stories
-- **Essential Tools** - Property management and analytics tools
-- **Responsive Design** - Mobile-first approach with Tailwind CSS
-- **Modern UI Components** - Built with shadcn/ui
+-  **Property Marketplace** - Browse and filter properties with an intuitive grid layout
+-  **Property Details** - Detailed property views with modal and sidebar components
+-  **Revenue Section** - Educational courses and trusted partner showcase
+-  **Testimonials** - Customer reviews and success stories
+-  **Essential Tools** - Property management and analytics tools
+-  **Responsive Design** - Mobile-first approach with Tailwind CSS
+-  **Modern UI Components** - Built with shadcn/ui
 
 ## 🚀 Tech Stack
 
-- **Framework:** [Next.js 15](https://nextjs.org) with App Router
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS 4
-- **UI Components:**
-  - shadcn/ui components
-  - Lucide icons
-- **Animations:** tw-animate-css
-- **Build Tool:** Turbopack
+-  **Framework:** [Next.js 15](https://nextjs.org) with App Router
+-  **Language:** TypeScript
+-  **Styling:** Tailwind CSS 4
+-  **UI Components:**
+   -  shadcn/ui components
+   -  Lucide icons
+-  **Animations:** tw-animate-css
+-  **Build Tool:** Turbopack
 
 ## 📦 Getting Started
 
 ### Prerequisites
 
-- Node.js 20+
-- npm, yarn, pnpm, or bun
+-  Node.js 20+
+-  npm, yarn, pnpm, or bun
 
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/aktaruzzamanjoti97/wizardtech
 cd wizardtech
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Run the development server:
+
 ```bash
 npm run dev
 ```
@@ -91,20 +95,21 @@ wizardtech/
 ## 🎨 UI Components
 
 This project uses [shadcn/ui](https://ui.shadcn.com/) components including:
-- Button
-- Card
-- Input
-- Separator
+
+-  Button
+-  Card
+-  Input
+-  Separator
 
 Custom components are organized in the `src/components` directory with dedicated sections for complex features.
 
 ## 🔧 Configuration
 
-- **TypeScript:** `tsconfig.json`
-- **Tailwind CSS:** `postcss.config.mjs`
-- **Next.js:** `next.config.ts`
-- **ESLint:** `eslint.config.mjs`
-- **Components:** `components.json`
+-  **TypeScript:** `tsconfig.json`
+-  **Tailwind CSS:** `postcss.config.mjs`
+-  **Next.js:** `next.config.ts`
+-  **ESLint:** `eslint.config.mjs`
+-  **Components:** `components.json`
 
 ## 🚢 Deployment
 
@@ -118,9 +123,9 @@ For detailed deployment instructions, check out the [Next.js deployment document
 
 ## 📚 Learn More
 
-- [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API
-- [Next.js Tutorial](https://nextjs.org/learn) - Interactive Next.js tutorial
-- [Tailwind CSS](https://tailwindcss.com/docs) - Utility-first CSS framework
+-  [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API
+-  [Next.js Tutorial](https://nextjs.org/learn) - Interactive Next.js tutorial
+-  [Tailwind CSS](https://tailwindcss.com/docs) - Utility-first CSS framework
 
 ## 📄 License
 
